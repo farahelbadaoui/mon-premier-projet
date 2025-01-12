@@ -8,12 +8,12 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class HomeContrellerController extends AbstractController
 {
-    #[Route('/home/contreller', name: 'app_home_contreller')]
+    #[Route('/home/controller', name: 'app_home_contreller')]
     public function index(): Response
     {
        return new Response(content:"Hello World !");
     }
-    #[Route(path:"/about", name:"app_about")]
+    #[Route(path:"/home/about", name:"app_about")]
     public function about():Response
     {
         return new Response( content:"hello World 2!");
